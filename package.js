@@ -9,7 +9,7 @@ Package.on_use(function (api) {
   api.use(['templating', 'ui', 'spacebars'], 'client');
   api.use(['coffeescript', 'sugar']);
   api.use(['util']);
-  api.export('Ctrl');
+  
 
   // Generated with: github.com/philcockfield/meteor-package-paths
   api.add_files('client/tmpl/tmpl.html', 'client');
@@ -20,6 +20,7 @@ Package.on_use(function (api) {
   api.add_files('client/control/instance.coffee', 'client');
   api.add_files('client/tmpl/tmpl.coffee', 'client');
 
+  api.export('Ctrl', ['client']);
 });
 
 

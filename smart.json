@@ -8,12 +8,7 @@
   "packages": {
     "sugar": {},
     "munit": {},
-    "util": {
-      "path": "../meteor-util"
-    },
-    "ctrl": {
-      "path": "../meteor-ctrl"
-    }
+    "util": {}
   }
 }
 
