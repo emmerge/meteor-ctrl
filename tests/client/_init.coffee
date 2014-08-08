@@ -4,8 +4,7 @@
 
 
 if Meteor.isClient
-  Meteor.startup ->
-    $('title').html('Tests:Ctrl')
+  Meteor.startup -> $('title').html('Tests: Ctrl')
 
 
 # --------------------------------------------------------------------------
