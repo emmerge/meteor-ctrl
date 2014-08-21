@@ -7,8 +7,9 @@
   "git": "https://github.com/philcockfield/meteor-control.git",
   "packages": {
     "sugar": {},
-    "munit": {},
-    "util": {}
+    "util": {
+      "git": "ssh://git@github.com/Respondly/meteor-util.git"
+    }
   }
 }
 

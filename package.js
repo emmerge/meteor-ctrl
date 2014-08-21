@@ -5,10 +5,10 @@ Package.describe({
 
 
 Package.on_use(function (api) {
-  api.use('http', ['client', 'server']);
+  // api.use('http', ['client', 'server']);
   api.use(['templating', 'ui', 'spacebars'], 'client');
-  api.use(['coffeescript', 'sugar']);
-  api.use(['util']);
+  api.use(['coffeescript', 'sugar', 'util']);
+  // api.use(['util']);
   
 
   // Generated with: github.com/philcockfield/meteor-package-paths
@@ -26,19 +26,19 @@ Package.on_use(function (api) {
 
 
 Package.on_test(function (api) {
-  api.use(['coffeescript', 'munit']);
-  api.use(['templating', 'ui', 'spacebars', 'stylus'], 'client');
-  api.use(['util']);
-  api.use('ctrl');
+  // api.use(['coffeescript', 'munit']);
+  // api.use(['templating', 'ui', 'spacebars', 'stylus'], 'client');
+  // api.use(['util']);
+  // api.use('ctrl');
 
-  // Generated with: github.com/philcockfield/meteor-package-paths
-  api.add_files('tests/client/ctrl/sample.html', 'client');
-  api.add_files('tests/client/_init.coffee', 'client');
-  api.add_files('tests/client/ctrl/sample.coffee', 'client');
-  api.add_files('tests/client/ctrl/sample.styl', 'client');
-  api.add_files('tests/client/control-test.coffee', 'client');
-  api.add_files('tests/client/dom-test.coffee', 'client');
-  api.add_files('tests/client/instance-test.coffee', 'client');
+  // // Generated with: github.com/philcockfield/meteor-package-paths
+  // api.add_files('tests/client/ctrl/sample.html', 'client');
+  // api.add_files('tests/client/_init.coffee', 'client');
+  // api.add_files('tests/client/ctrl/sample.coffee', 'client');
+  // api.add_files('tests/client/ctrl/sample.styl', 'client');
+  // api.add_files('tests/client/control-test.coffee', 'client');
+  // api.add_files('tests/client/dom-test.coffee', 'client');
+  // api.add_files('tests/client/instance-test.coffee', 'client');
 
 });
 
