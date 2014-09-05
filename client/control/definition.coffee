@@ -38,7 +38,7 @@ class Ctrl.Definition
         delete @data.__instance__
 
         # Cross reference blaze-view/instance.
-        blazeView = @__view__
+        blazeView = Blaze.getView()
         blazeView.__instance__ = instance
         instance.__internal__.blazeView = blazeView
 
@@ -65,7 +65,7 @@ class Ctrl.Definition
         instance = @__instance__
 
         # Ensure that the control has a single root element.
-        if @__view__.domrange.members.length > 1
+        if Blaze.getView()._domrange.members.length > 1
           throw new Error("The [#{ self.type }] ctrl has more than one top-level element in the template.")
 
         # Add the UID attribute.
@@ -112,8 +112,7 @@ class Ctrl.Definition
     el = el[0] if el.jquery
 
     # Render the control.
-    domrange = UI.renderWithData(Template.ctrl, args)
-    UI.insert(domrange, el)
+    Blaze.renderWithData(Template.ctrl, args, el)
 
     # Retrieve the new instance.
     instance = Ctrl.__inserted

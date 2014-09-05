@@ -33,7 +33,7 @@ Template.ctrl.helpers
     if not ctrl
       throw new Error("The control of type '#{ tmpl }' has not been defined.")
 
-    tmplInstance = UI._templateInstance()
+    tmplInstance = Template.instance()
 
     # Don't create a new ctrl instance if this isn't a new template instance
     instance = tmplInstance._ctrlInstance

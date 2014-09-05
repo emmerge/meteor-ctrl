@@ -112,7 +112,7 @@ class Ctrl.Instance
                     If ommited the root element is returned.
   ###
   find: (selector) ->
-    if el = @__internal__.blazeView?.domrange?.members[0]
+    if el = @__internal__.blazeView?._domrange?.members[0]
       if not selector? or selector is ''
         $(el)
       else
