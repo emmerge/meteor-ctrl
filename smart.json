@@ -8,7 +8,8 @@
   "packages": {
     "sugar": {},
     "util": {
-      "git": "ssh://git@github.com/Respondly/meteor-util.git"
+      "git": "ssh://git@github.com/Respondly/meteor-util.git",
+      "commit": "1d7b636977a04d7703518201f799363cb3aaa1bc"
     }
   }
 }
